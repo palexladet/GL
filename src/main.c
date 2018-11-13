@@ -9,7 +9,7 @@ int main(void)
 {
     while (n<8)
     {
-        s=s*3+n;
+        s=s+3*(n+1);
         n=n+1;
     }
     printf("sommes si des %d premiers termes: %d",n ,s);
