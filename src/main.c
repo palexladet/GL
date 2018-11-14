@@ -13,6 +13,8 @@ int main(void)
         n=n+1;
     }
     printf("sommes si des %d premiers termes: %d",n ,s);
+    getchar();
+    getchar();
 
     return 0;
 }
