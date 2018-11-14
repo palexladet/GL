@@ -4,7 +4,7 @@
 #include "my_header.h"
 #include "stdlib.h"
 
-int s=0, n=1;
+int s=0, n=1, m;
 
 int main(void)
 {
@@ -14,11 +14,14 @@ int rand(void)
 {
     while (n<12)
     {
-        m=rand(1,10);
+        RAND_MIN=1;
+        RAND_MAX=10;
+        m=rand();
         s=s+m;
-        n=n+1
+        n=n+1;
     }
+    return 0;
 }
 
 
-return 0;
+
