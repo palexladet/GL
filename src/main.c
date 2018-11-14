@@ -5,7 +5,6 @@
 #include "stdlib.h"
 
 int s=0, n=1;
-
 int main(void)
 {
     rand();
@@ -21,4 +20,6 @@ int rand(void)
 }
 
 
-return 0;
+
+
+
