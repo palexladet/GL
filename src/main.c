@@ -2,12 +2,21 @@
 //
 
 #include "my_header.h"
+#include "TP_lib.h"
+#include "ansi_c.h"
 
-int main(void)
+short s=0, resultat=2;
+
+void main(void)
 {
-    short resultat, i=0;
-	while(i<1)
+	while(resultat>1)
 	{
 		resultat = LancerDe ();
+		s=s+resultat;
+	}
+	print("résultat lancers = %d",s);
+
+	getchar();
+	getchar();
 
 }
