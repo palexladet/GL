@@ -5,5 +5,9 @@
 
 int main(void)
 {
-    return 0;
+    short resultat, i=0;
+	while(i<1)
+	{
+		resultat = LancerDe ();
+
 }
