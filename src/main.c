@@ -2,17 +2,23 @@
 //
 #include <ansi_c.h>
 #include "my_header.h"
+#include "stdlib.h"
 
-int s=3, n=1;
+int s=0, n=1;
 
 int main(void)
 {
-    while (n<8)
-    {
-        s=s*3+n;
-        n=n+1;
-    }
-    printf("sommes si des %d premiers termes: %d",n ,s);
-
-    return 0;
+    rand();
 }
+int rand(void)
+{
+    while (n<12)
+    {
+        m=rand(1,10);
+        s=s+m;
+        n=n+1
+    }
+}
+
+
+return 0;
