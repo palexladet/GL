@@ -12,7 +12,7 @@ int main(void)
         s=s+n*3+n*7;
         n=n+1;
     }
-    printf("sommes si des %d premiers termes: %d",n ,s);
+    printf("sommes s4 des %d premiers termes: %d",n ,s);
     getchar();
     getchar();
 
