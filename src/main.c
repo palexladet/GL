@@ -14,7 +14,7 @@ void main(void)
 		resultat = LancerDe ();
 		s=s+resultat;
 	}
-	print("résultat lancers = %d",s);
+	printf("resultat lancers = %d",s);
 
 	getchar();
 	getchar();
