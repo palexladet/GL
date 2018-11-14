@@ -8,7 +8,3 @@ void main(void)
 		i++;
 	}
 }
-
-
-
-
