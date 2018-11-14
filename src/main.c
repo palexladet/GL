@@ -1,10 +1,9 @@
-#include "TP_lib.h"
-void main(void)
+//  Copyright (c) 2018 Antoine Tran Tan
+//
+
+#include "my_header.h"
+
+int main(void)
 {
-	short resultat, i=0;
-	while(i<10)
-	{
-		resultat = LancerDe ();
-		i++;
-	}
+    return 0;
 }
