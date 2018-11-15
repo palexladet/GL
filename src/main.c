@@ -7,7 +7,7 @@ int s=3, n=1;
 
 int main(void)
 {
-    while (s<9876)
+    while( 3*(n+1) < 9876 )
     {
         s=s+3*(n+1);
         n=n+1;
