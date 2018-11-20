@@ -61,6 +61,9 @@ int main(void)
 	{
 		b[i]=a[1-i];
 	}
+//petit 5
+//
+	
 	int miroir[16];
 	for(i=0;i<8;i=i+1)
 	{
