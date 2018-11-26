@@ -5,9 +5,10 @@
 
 #include <ansi_c.h>
 #include "my_header.h"
-int i,seuil=127;
+
 int main(void)
 {
+	int i,seuil=127;
 	unsigned char bin[10];
 	for (i=0;i<10;i=i+1)
 	{
@@ -45,12 +46,12 @@ int main(void)
 //petit 3
 //
 
-	char dist[10]={65,84,121,54,25,47,98,62,02,74};
+	char output_dist[10],dist[10]={65,84,121,54,25,47,98,62,02,74};
 	int i;
 	
 	for(i=1;i<10;i=i+1)
 	{
-		dist[i]=dist[i]-dist[i-1];
+		 output_dist[10]=dist[i]-dist[i-1];
 	}
 	
 //petit 4
@@ -59,7 +60,7 @@ int main(void)
 	
 	for(i=0;i<5;i=1+i)
 	{
-		b[i]=a[1-i];
+		b[i]=a[5-i];
 	}
 //petit 5
 //
@@ -67,7 +68,7 @@ int main(void)
 	int miroir[16];
 	for(i=0;i<8;i=i+1)
 	{
-		miroir[7+i]=miroir[7-i];
+		miroir[16/2+i]=miroir[16/2-i-1];
 	}
 	return 0;
-}
+} 	
