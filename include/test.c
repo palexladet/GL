@@ -4,7 +4,6 @@
 //
 
 #include <ansi_c.h>
-#include "my_header.h"
 
 int main(void)
 {
@@ -14,7 +13,7 @@ int main(void)
 		cgagnant[i]=rand()% 49+1;
 		cjoueur[i]=rand()% 49+1;
 
-		if(cgagnat[i]==cjoueur[i])
+		if(cgagnant[i]==cjoueur[i])
 		{
 			n=n+1;
 		}
