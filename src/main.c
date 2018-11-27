@@ -9,7 +9,7 @@
 int main(void)
 {
 //------------------------petit_2-----------------------------//
-	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,n=0;
+	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,m=0;
 	for(i=0;i<6;i++)
 	{ 
 		cgagnant[i]=rand()% 49+1;
@@ -17,15 +17,17 @@ int main(void)
 
 		if(cgagnat[i]==cjoueur[i])
 		{
-			n=n+1;
+			m=m+1;
 		}
 		else
 		{
-			n=n;
+			m=m;
 		}
 	}
 	void initialiserTirage(void);
 	short tirerNumero(void);
+
+
 
 	
 	return 0;
