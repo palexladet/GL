@@ -28,7 +28,7 @@ int main(void)
 	}
 	initialiserTirage()
 
-	n=tirerNumero()
+	tirerNumero()
 
 
 
