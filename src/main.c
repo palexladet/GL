@@ -28,9 +28,9 @@ int main(void)
 	}
 
 //-----------------------petit_4-------------------------------//
-	initialiserTirage()
+	initialiserTirage();
 
-	tirerNumero()
+	n=tirerNumero();
 
 
 
