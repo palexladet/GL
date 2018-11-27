@@ -7,6 +7,7 @@
 #include "my_header.h"
 #include <TP_lib_suite.h>
 #include <TP_lib.h>
+
 int main(void)
 {
 //------------------------petit_2-----------------------------//
@@ -27,7 +28,7 @@ int main(void)
 	}
 	initialiserTirage()
 
-	tirerNumero()
+	n=tirerNumero()
 
 
 
