@@ -15,7 +15,7 @@ int main(void)
 		cgagnant[i]=rand()% 49+1;
 		cjoueur[i]=rand()% 49+1;
 
-		if(cgagnat[i]==cjoueur[i])
+		if(cgagnant[i]==cjoueur[i])
 		{
 			m=m+1;
 		}
@@ -24,8 +24,8 @@ int main(void)
 			m=m;
 		}
 	}
-	void initialiserTirage(void);
-	short tirerNumero(void);
+	initialiserTirage()
+
 
 
 
