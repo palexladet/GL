@@ -24,6 +24,9 @@ int main(void)
 			n=n;
 		}
 	}
+	void initialiserTirage(void);
+	short tirerNumero(void);
 
+	
 	return 0;
 } 	
