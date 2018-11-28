@@ -11,7 +11,7 @@
 int main(void)
 {
 //------------------------petit_2-----------------------------//
-	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,j,m=0,n=0,o[100],G;
+	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,j,m=0,o[100],G;
 	for(i=0;i<6;i++)
 	{ 
 		cgagnant[i]=rand()% 49+1;
@@ -27,14 +27,18 @@ int main(void)
 		}
 	}
 //-----------------------petit_4-------------------------------//
-	initialiserTirage();
 	for(i=0;i<100;i++)
 	{
-		n=0;
+		int cj[6]={29,49,37,19,42,4},j,k,n=0;
 		for(j=0;j<6;j++)
 		{
+			initialiserTirage();
 			cgagnant[j]=tirerNumero();
-			if(cgagnant[j]==cjoueur[j])
+		}
+		for(k=0;k<6;k++)
+		{
+				
+			if(cj[k]==cgagnant[0] || cj[k]==cgagnant[1] || cj[k]==cgagnant[2] || cj[k]==cgagnant[3] || cj[k]==cgagnant[4] || cj[k]==cgagnant[5])
 			{
 				n=n+1;
 			}
@@ -42,6 +46,7 @@ int main(void)
 			{
 				n=n;
 			}
+			
 		}
 		o[i]=n;
 		if(i>=1)
@@ -62,8 +67,9 @@ int main(void)
 	}
 	G=o[99];
 	return 0;
-} 	
-	
+}		
+		
+
 			
 			
 			
