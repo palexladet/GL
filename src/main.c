@@ -11,7 +11,7 @@
 int main(void)
 {
 //------------------------petit_2-----------------------------//
-	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,m=0;
+	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,j,m=0;
 	for(i=0;i<6;i++)
 	{ 
 		cgagnant[i]=rand()% 49+1;
@@ -26,15 +26,22 @@ int main(void)
 			m=m;
 		}
 	}
-
 //-----------------------petit_4-------------------------------//
 	initialiserTirage();
-
-	n=tirerNumero();
-
-
-
-
-	
+	for(i=0;i<100;i++)
+	{
+		for(j=0;j<6;j++)
+		{
+			cgagnant[j]=tirerNumero();
+			if(cgagnant[j]==cjoueur[j])
+			{
+				m=m+1;
+			}
+			else
+			{
+				m=m;
+			}
+		}
+	}
 	return 0;
 } 	
