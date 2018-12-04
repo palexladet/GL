@@ -10,124 +10,24 @@
 
 int main(void)
 {
-//------------------------petit_2-----------------------------//
-	int cgagnant[6]={0,0,0,0,0,0},cjoueur[6]={0,0,0,0,0,0},i,j,m=0,o[100],G;
-	for(i=0;i<6;i++)
-	{ 
-		cgagnant[i]=rand()% 49+1;
-		cjoueur[i]=rand()% 49+1;
+	char nom[7];
+	nom[0] = 'D' ;
+	nom[1] = 'u' ;
+	nom[2] = 'p' ;
+	nom[3] = 'o' ;
+	nom[4] = 'n' ;
+	nom[5] = 't' ;
+	nom[6] = '\0' ;
+	sprintf(nom,"Dupont");
 
-		if(cgagnant[i]==cjoueur[i])
-		{
-			m=m+1;
-		}
-		else
-		{
-			m=m;
-		}
-	}
-//-----------------------petit_4-------------------------------//
-	for(i=0;i<100;i++)
-	{
-		int cj[6]={29,49,37,19,42,4},j,k,n=0;
-		for(j=0;j<6;j++)
-		{
-			initialiserTirage();
-			cgagnant[j]=tirerNumero();
-		}
-		for(k=0;k<6;k++)
-		{
-				
-			if(cj[k]==cgagnant[0] || cj[k]==cgagnant[1] || cj[k]==cgagnant[2] || cj[k]==cgagnant[3] || cj[k]==cgagnant[4] || cj[k]==cgagnant[5])
-			{
-				n=n+1;
-			}
-			else
-			{
-				n=n;
-			}
-			
-		}
-		o[i]=n;
-		if(i>=1)
-		{
-			if(o[i]>o[i-1])
-			{
-				o[i]=n;
-			}
-			else
-			{
-				o[i]=o[i-1];
-			}
-		}
-		else
-		{
-			o[i]=0;
-		}
-	}
-	G=o[99];
-	return 0;
-}		
-		
+	char pr_nom[4];
+	pr_nom[0] = 'L' ;
+	pr_nom[1] = 'e' ;
+	pr_nom[2] = 'a' ;
+	pr_nom[3] = '\0' ;
+	sprintf(pr_nom,"Lea");
 
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-if(cgagnant[j]==cj[j])
-{
-n=n+1;
-}
-else
-{
-n=n;
-}
-}
-o[i]=n;
-if(i>=1)
-{
-if(o[i]>o[i-1])
-{
-o[i]=n;
-}
-else
-{
-o[i]=o[i-1];
-}
-}
-else
-{
-o[i]=0;
-}
-}
-G=o[99];
-return 0;
+	signed int a=19;
+
+	printf("je m'appelle %s %s et j'ai %d ans",pr_nom,nom,a);
 } 	
