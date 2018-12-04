@@ -30,4 +30,5 @@ int main(void)
 	signed int a=19;
 
 	printf("je m'appelle %s %s et j'ai %d ans",pr_nom,nom,a);
+	return 0;
 } 	
