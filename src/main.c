@@ -10,18 +10,16 @@
 
 int main(void)
 {
-	char nom[7];
-	char pr_nom[4];
+	char nom[6],pr_nom[16];
 	signed int a=19;
 
-	scanf("%s", nom );
-	scanf("%s", pr_nom );
-	scanf("%d", a);
+	scanf("%s");
+	scanf("%s");
+	scanf("%d");
 
 
 	printf("je m'appelle %s %s et j'ai %d ans",pr_nom,nom,a);
 	
-	MessagePopup(pr_nom,nom,a,"je m'appelle %s %s et j'ai %d ans");
+	MessagePopup("Je m'appelle", pr_nom, nom, "j'ai", a, "ans");
 	return 0;
 } 	
-	
