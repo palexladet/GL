@@ -10,16 +10,13 @@
 
 int main(void)
 {
-	char nom[6],pr_nom[16];
-	signed int a=19;
-
-	scanf("%s");
-	scanf("%s");
-	scanf("%d");
-
-
-	printf("je m'appelle %s %s et j'ai %d ans",pr_nom,nom,a);
+	char ligne1 [80] = "Nom: pentagone_B" ;
+	char ligne2 [80] = "Nb points: 5" ;
+	char ligne3 [80] = "coordonnées: 10 20 30 20 30 40 43 53 35 65" ;
 	
-	MessagePopup("Je m'appelle", pr_nom, nom, "j'ai", a, "ans");
+
+	scanf( "%[^\n]", ligne1 );
+	scanf( "%[^\n]", ligne2 );
+	scanf( "%[^\n]", ligne3 );
 	return 0;
 } 	
