@@ -13,9 +13,9 @@ int main(void)
 	char nom[6],pr_nom[16];
 	signed int a=19;
 
-	scanf("%s");
-	scanf("%s");
-	scanf("%d");
+	scanf("%s",nom);
+	scanf("%s",pr_nom);
+	scanf("%d",a);
 
 
 	printf("je m'appelle %s %s et j'ai %d ans",pr_nom,nom,a);
