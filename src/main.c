@@ -17,9 +17,8 @@ int main(void)
 	scanf("%s",pr_nom);
 	scanf("%s",nom);
 
-	sprintf("je m'appelle %1\$s , %2\$s et j'ai %3\$d ans",pr_nom,nom,a);
-	MessagePopup("Je m'appelle",nom);
-	MessagePopup("Je m'appelle",pr_nom); 
+	printf("je m'appelle %s %s et j'ai %d ans",pr_nom,nom,a);
+	MessagePopup("Je m'appelle",nom),("Je m'appelle",pr_nom);   //!?!?!?!?!?!?!?!?!?!?
 	getchar();
 	getchar();
 	
