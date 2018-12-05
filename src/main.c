@@ -23,4 +23,4 @@ int main(void)
 	return 0;
 } 	
 
-#include "c:\Program Files (x86)\National Instruments\CVI2017\include\ansi\stdio.h"
+
