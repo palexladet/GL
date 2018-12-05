@@ -10,6 +10,7 @@
 
 int main(void)
 {
+	
 	char ligne1 [80] = "Nom: pentagone_B" ;
 	char ligne2 [80] = "Nb points: 5" ;
 	char ligne3 [80] = "coordonnees: 10 20 30 20 30 40 43 53 35 65" ;
@@ -19,8 +20,7 @@ int main(void)
 	char nb_pts [100];
 	sscanf(ligne1,"%s",nom_fig);
 	sscanf(ligne2,"%s",nb_pts);
-	sscanf(ligne3,"%u %*s %lu %*s",&x, &y);
+	sscanf(ligne3,"[%c/%c]",&x,&y);
+	
 	return 0;
 } 	
-
-
