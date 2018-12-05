@@ -17,9 +17,5 @@ int main(void)
 	scanf("%s",ligne2);
 	scanf("%s",ligne3);
 	
-
-	scanf( "%[^\n]", ligne1 );
-	scanf( "%[^\n]", ligne2 );
-	scanf( "%[^\n]", ligne3 );
 	return 0;
 } 	
