@@ -5,8 +5,7 @@
 
 #include <ansi_c.h>
 #include "my_header.h"
-#include <TP_lib_suite.h>
-#include <TP_lib.h>
+
 
 int main(void)
 {
