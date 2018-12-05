@@ -4,21 +4,24 @@
 //
 
 #include <ansi_c.h>
+#include < stdio.h > 
 #include "my_header.h"
 
 
 int main(void)
 {
-	char nom[6],pr_nom[16];
-	signed int a=19;
+	char nom[100],pr_nom[100];
+	int a=19;
 
-	scanf("%s",nom);
-	scanf("%s",pr_nom);
-	scanf("%d",a);
-
-
-	sprintf("je m'appelle %1\$s , %2\$s et j'ai %3\$d ans",pr_nom ,nom ,a); 
 	
-	MessagePopup("Je m'appelle", pr_nom, nom, "j'ai", a, "ans");
+	scanf("%s",pr_nom);
+	scanf("%s",nom);
+
+	sprintf("je m'appelle %1\$s , %2\$s et j'ai %3\$d ans",pr_nom,nom,a);
+	MessagePopup("Je m'appelle",nom);
+	MessagePopup("Je m'appelle",pr_nom); 
+	getchar();
+	getchar();
+	
 	return 0;
 } 	
