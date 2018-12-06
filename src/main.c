@@ -16,11 +16,19 @@ int main(void)
 	char ligne3[80] = "coordonnees: 10 20 30 20 30 40 43 53 35 65" ;
 	char x[5];
 	char y[5];
-	char nom_fig[100];
-	char nb_pts[100];
-	sscanf(ligne1,"%s",nom_fig);
-	sscanf(ligne2,"%c %*s",nb_pts);
-	sscanf(ligne3,"%c %*s %1c %*s",&x[5],&y[5]);
+	char nom_fig[10000];
+	char nb_pts[10000],X,Y;
+	sscanf(ligne1,"%s",nom_fig[10000]);
+	sscanf(ligne2,"%i %*s",nb_pts[10000]);
+	sscanf(ligne3,"[%i %*s %1i %*s]",&x[5],&y[5]);
+	MessagePopup("la figure est un",nom_fig);
+	MessagePopup("il y a ",nb_pts); 
+	X=sprintf(x);
+	Y=sprintf(y);
+	MessagePopup("les coordonees en x sont",x); 
+	MessagePopup("les coordonees en y sont",y); 
+	
 	
 	return 0;
 } 	
+	
