@@ -12,23 +12,23 @@ int main(void)
 {
 	
 	char nom_fig[80];
-	int nb_pts;
-	char x[5];
-	char y[5];
+	unsigned char nb_pts[2];
+	unsigned char x[5];
+	unsigned char y[5];
 	
 	printf("quel est le nom de la figure: ");
 	scanf("%s",nom_fig);
 	
 	printf("combient y a t-il de sommets sur la figure: ");
-	scanf("%d",&nb_pts);
+	scanf("%2c",nb_pts);
 	
-	printf("quelles sont les coordonnées en x: ");
-	scanf("%s",x);
-	printf("quelles sont les coordonnées en y: ");
-	scanf("%s",y);
+	printf("quelles sont les coordonnees en x: ");
+	scanf("%5c",x);
+	printf("quelles sont les coordonnees en y: ");
+	scanf("%5c",y);
 	
 	MessagePopup("la figure est un",nom_fig);
-	MessagePopup("il y a %d points",nb_pts); 
+	MessagePopup("il y a .__. points",nb_pts); 
 	MessagePopup("les coordonees en x sont",x); 
 	MessagePopup("les coordonees en y sont",y); 
 	
