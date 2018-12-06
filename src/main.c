@@ -11,24 +11,25 @@
 int main(void)
 {
 	
-	char ligne1[80] = "Nom: pentagone_B" ;
-	char ligne2[80] = "Nb points: 5" ;
-	char ligne3[80] = "coordonnees: 10 20 30 20 30 40 43 53 35 65" ;
+	char nom_fig[80];
+	int nb_pts;
 	char x[5];
 	char y[5];
-	char nom_fig[10000];
-	char nb_pts[10000],X,Y;
-	sscanf(ligne1,"%s",nom_fig[10000]);
-	sscanf(ligne2,"%d %*s",nb_pts[10000]);
-	sscanf(ligne3,"[%i %*s %1i %*s]",x[5],&y[5]);
+	printf("quel est le nom de la figure: ");
+	scanf("%s",nom_fig);
+	printf("quel est le nom de la figure: ");
+	scanf("%d",nb_pts);
+	printf("quelles sont les coordonnées en x: ");
+	scanf("%s",x);
+	printf("quelles sont les coordonnées en y: ");
+	scanf("%s",y);
 	MessagePopup("la figure est un",nom_fig);
 	MessagePopup("il y a %d points",nb_pts); 
-	sprintf("la figure est un %s à %d points de coordonnées respectives %s en x et %s en y",nom_fig,nb_pts,x,y);
 	MessagePopup("les coordonees en x sont",x); 
 	MessagePopup("les coordonees en y sont",y); 
 	
 	
 	return 0;
 } 	
-	
+
 	
