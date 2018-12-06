@@ -28,7 +28,7 @@ int main(void)
 	scanf("%s",y);
 	
 	MessagePopup("la figure est un",nom_fig);
-	MessagePopup("il y a %d points",&nb_pts); 
+	MessagePopup("il y a %d points",nb_pts); 
 	MessagePopup("les coordonees en x sont",x); 
 	MessagePopup("les coordonees en y sont",y); 
 	
