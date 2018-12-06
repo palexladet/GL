@@ -19,16 +19,17 @@ int main(void)
 	char nom_fig[10000];
 	char nb_pts[10000],X,Y;
 	sscanf(ligne1,"%s",nom_fig[10000]);
-	sscanf(ligne2,"%i %*s",nb_pts[10000]);
-	sscanf(ligne3,"[%i %*s %1i %*s]",&x[5],&y[5]);
+	sscanf(ligne2,"%d %*s",nb_pts[10000]);
+	sscanf(ligne3,"[%i %*s %1i %*s]",x[5],&y[5]);
 	MessagePopup("la figure est un",nom_fig);
-	MessagePopup("il y a ",nb_pts); 
-	X=sprintf(x);
-	Y=sprintf(y);
+	MessagePopup("il y a %d points",nb_pts); 
+	sprintf("la figure est un %s à %d points de coordonnées respectives %s en x et %s en y",nom_fig,nb_pts,x,y);
+	sprintf("%s",y);
 	MessagePopup("les coordonees en x sont",x); 
 	MessagePopup("les coordonees en y sont",y); 
 	
 	
 	return 0;
 } 	
+	
 	
