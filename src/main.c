@@ -24,7 +24,6 @@ int main(void)
 	MessagePopup("la figure est un",nom_fig);
 	MessagePopup("il y a %d points",nb_pts); 
 	sprintf("la figure est un %s à %d points de coordonnées respectives %s en x et %s en y",nom_fig,nb_pts,x,y);
-	sprintf("%s",y);
 	MessagePopup("les coordonees en x sont",x); 
 	MessagePopup("les coordonees en y sont",y); 
 	
