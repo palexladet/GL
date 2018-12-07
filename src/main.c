@@ -8,16 +8,6 @@
 #include <TP_lib_suite.h>
 #include <TP_lib.h>
 
-//  Copyright (c) 2018 Antoine Tran Tan
-//
-//petit 1
-//
-
-#include <userint.h>
-#include "c:\Program Files (x86)\National Instruments\CVI2017\include\ansi\stdio.h"
-char x[5];
-char y[5];
-
 //char x[5];
 //char y[5];
 
