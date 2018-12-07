@@ -12,29 +12,28 @@ int main(void)
 {
 	
 	char nom_fig[80];
-	unsigned char nb_pts[2];
-	unsigned char x[5];
-	unsigned char y[5];
+	char nb_pts[2];
+	char x[5];
+	char y[5];
 	
-	printf("quel est le nom de la figure: ");
-	scanf("%s",nom_fig);
 	
-	printf("combient y a t-il de sommets sur la figure: ");
-	scanf("%2c",nb_pts);
+	char ligne1[80] = "Nom: pentagone_B" ;
+	char ligne2[80] = "Nb points: 5" ;
+	char ligne3[80] = "Coordonnees: 10 20 30 20 30 40 43 53 35 65";
 	
-	printf("quelles sont les coordonnees en x: ");
-	scanf("%5c",x);
-	printf("quelles sont les coordonnees en y: ");
-	scanf("%5c",y);
+	sscanf(ligne1,"%*s %d",nom_fig);
+	scanf(ligne2, "%*s %2c",nb_pts);
+	scanf("%*s %c %c %c %c %c %c %c %c %c %c ",x[0] ,y[0] ,x[1] ,y[1] ,x[2] ,y[2] ,x[3] ,y[3] ,x[4] ,y[4]);
 	
 	MessagePopup("la figure est un",nom_fig);
-	MessagePopup("il y a .__. points",nb_pts); 
-	MessagePopup("les coordonees en x sont",x); 
-	MessagePopup("les coordonees en y sont",y); 
+	MessagePopup("il y a .__. points",nb_pts[0]); 
+	MessagePopup("les coordonees en x sont",x[0], x[1], x[2], x[3], x[4]); 
+	MessagePopup("les coordonees en y sont",y[0], y[1], y[2], y[3], y[4]); 
 	
 	
 	return 0;
 } 	
+
 
 
 	
