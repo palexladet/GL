@@ -25,7 +25,8 @@ int main(void)
 {
 	
 	char nom_fig[80];
-	char nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5;
+	unsigned char nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5;
+	static char phrase[80];
 	
 	
 	
@@ -34,17 +35,19 @@ int main(void)
 	char ligne3[80] = "Coordonnees: 10 20 30 20 30 40 43 53 35 65";
 	
 	sscanf(ligne1,"%*s %s",nom_fig);
-	sscanf(ligne2, "%*s %c",&nb_pts);
-	sscanf(ligne3,"%*s %c %c %c %c %c %c %c %c %c %c ",&x1 ,&y1 ,&x2 ,&y2 ,&x3 ,&y3 ,&x4 ,&y4 ,&x5 ,&y5);
+	sscanf(ligne2, "%*s %*s %1u",nb_pts);
+	sscanf(ligne3,"%*s %1u %1u %1u %1u %1u %1u %1u %1u %1u %1u ",&x1 ,&y1 ,&x2 ,&y2 ,&x3 ,&y3 ,&x4 ,&y4 ,&x5 ,&y5);
 	
-	MessagePopup("la figure est un",nom_fig);
-	MessagePopup("il y a .__. points",nb_pts); 
-	MessagePopup("les coordonees en x sont"," x1 x2 x3 x4 x5"); 
-	MessagePopup("les coordonees en y sont"," y1 y2 y3 y4 y5"); 
+	sprintf(phrase,"la figure %s possede %u sommets de coordonnees x1 %u y1 %u x2 %u y2 %u x3 %u y3 %u x4 %u y4 %u x5 %u y5 %u",nom_fig, nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5);
+	
+	MessagePopup("txt",phrase);
+	//MessagePopup("il y a .__. points",nb_pts); 
+	//MessagePopup("les coordonees en x sont",x1 x2 x3 x4 x5); 
+	//MessagePopup("les coordonees en y sont",y1 y2 y3 y4 y5); 
 	
 	
 	return 0;
-} 	
+}  	
 
 
 
