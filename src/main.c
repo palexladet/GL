@@ -21,21 +21,33 @@ char y[5];
 //char x[5];
 //char y[5];
 
+unsigned char nb_pts;
+unsigned char x1 ;
+unsigned char y1 ;
+unsigned char x2 ;
+unsigned char y2 ;
+unsigned char x3 ;
+unsigned char y3 ;
+unsigned char x4 ;
+unsigned char y4 ;
+unsigned char x5 ;
+unsigned char y5 ;
+
 int main(void)
 {
 	
 	char nom_fig[80];
-	unsigned char nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5;
-	static char phrase[80];
 	
+	static char phrase[80];
+
 	
 	
 	char ligne1[80] = "Nom: pentagone_B" ;
-	char ligne2[80] = "Nb points: 5" ;
+	char ligne2[80] = "Nb_points: 5" ;
 	char ligne3[80] = "Coordonnees: 10 20 30 20 30 40 43 53 35 65";
 	
 	sscanf(ligne1,"%*s %s",nom_fig);
-	sscanf(ligne2, "%*s %*s %1u",nb_pts);
+	sscanf(ligne2, "%*s %u",nb_pts);
 	sscanf(ligne3,"%*s %1u %1u %1u %1u %1u %1u %1u %1u %1u %1u ",&x1 ,&y1 ,&x2 ,&y2 ,&x3 ,&y3 ,&x4 ,&y4 ,&x5 ,&y5);
 	
 	sprintf(phrase,"la figure %s possede %u sommets de coordonnees x1 %u y1 %u x2 %u y2 %u x3 %u y3 %u x4 %u y4 %u x5 %u y5 %u",nom_fig, nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5);
@@ -47,7 +59,7 @@ int main(void)
 	
 	
 	return 0;
-}  	
+} 	
 
 
 
