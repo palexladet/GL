@@ -18,11 +18,14 @@
 char x[5];
 char y[5];
 
+//char x[5];
+//char y[5];
+
 int main(void)
 {
 	
 	char nom_fig[80];
-	char nb_pts[2];
+	char nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5;
 	
 	
 	
@@ -31,17 +34,18 @@ int main(void)
 	char ligne3[80] = "Coordonnees: 10 20 30 20 30 40 43 53 35 65";
 	
 	sscanf(ligne1,"%*s %s",nom_fig);
-	sscanf(ligne2, "%*s %2c",nb_pts);
-	sscanf("%*s %c %c %c %c %c %c %c %c %c %c ",x[0] ,y[0] ,x[1] ,y[1] ,x[2] ,y[2] ,x[3] ,y[3] ,x[4] ,y[4]);
+	sscanf(ligne2, "%*s %c",&nb_pts);
+	sscanf(ligne3,"%*s %c %c %c %c %c %c %c %c %c %c ",&x1 ,&y1 ,&x2 ,&y2 ,&x3 ,&y3 ,&x4 ,&y4 ,&x5 ,&y5);
 	
 	MessagePopup("la figure est un",nom_fig);
-	MessagePopup("il y a .__. points",nb_pts[0]); 
-	MessagePopup("les coordonees en x sont"," x[0] x[1] x[2] x[3] x[4]"); 
-	MessagePopup("les coordonees en y sont"," y[0] y[1] y[2] y[3] y[4]"); 
+	MessagePopup("il y a .__. points",nb_pts); 
+	MessagePopup("les coordonees en x sont"," x1 x2 x3 x4 x5"); 
+	MessagePopup("les coordonees en y sont"," y1 y2 y3 y4 y5"); 
 	
 	
 	return 0;
 } 	
+
 
 
 
