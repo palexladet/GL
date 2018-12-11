@@ -1,57 +1,34 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
-//petit 1
-//
-
 #include <ansi_c.h>
-#include "my_header.h"
-#include <TP_lib_suite.h>
-#include <TP_lib.h>
-
-//char x[5];
-//char y[5];
-
-unsigned char nb_pts;
-unsigned char x1 ;
-unsigned char y1 ;
-unsigned char x2 ;
-unsigned char y2 ;
-unsigned char x3 ;
-unsigned char y3 ;
-unsigned char x4 ;
-unsigned char y4 ;
-unsigned char x5 ;
-unsigned char y5 ;
+#include <math.h>
 
 int main(void)
 {
+	unsigned int a, b, c;
+	int R;
 	
-	char nom_fig[80];
+	printf("a: ");
+	scanf("%u",&a);
 	
-	static char phrase[80];
-
+	printf("b: "); 
+	scanf("%u",&b); 
 	
+	printf("c: "); 
+	scanf("%u",&c);
 	
-	char ligne1[80] = "Nom: pentagone_B" ;
-	char ligne2[80] = "Nb_points: 5" ;
-	char ligne3[80] = "Coordonnees: 10 20 30 20 30 40 43 53 35 65";
-	
-	sscanf(ligne1,"%*s %s",nom_fig);
-	sscanf(ligne2, "%*s %u",nb_pts);
-	sscanf(ligne3,"%*s %1u %1u %1u %1u %1u %1u %1u %1u %1u %1u ",&x1 ,&y1 ,&x2 ,&y2 ,&x3 ,&y3 ,&x4 ,&y4 ,&x5 ,&y5);
-	
-	sprintf(phrase,"la figure %s possede %u sommets de coordonnees x1 %u y1 %u x2 %u y2 %u x3 %u y3 %u x4 %u y4 %u x5 %u y5 %u",nom_fig, nb_pts, x1 ,y1 ,x2 ,y2 ,x3 ,y3 ,x4 ,y4 ,x5 ,y5);
-	
-	MessagePopup("txt",phrase);
-	//MessagePopup("il y a .__. points",nb_pts); 
-	//MessagePopup("les coordonees en x sont",x1 x2 x3 x4 x5); 
-	//MessagePopup("les coordonees en y sont",y1 y2 y3 y4 y5); 
-	
-	
+	if(a<=9&&b<=9&&c<=6)
+	{
+		R=(a*10+b)*pow(10,c);
+		printf("la valeure de la resistance est egale a %d ohms",R);
+	}
+	else
+	{
+		printf("osti de noob");
+	}
+	getchar();
+	getchar();
 	return 0;
-} 	
-
-
-
+}    
+	
+	
 
 	
