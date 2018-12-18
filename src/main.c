@@ -1,6 +1,6 @@
 #include <biblio_resistance.h>
 #include <ansi_c.h>
-#include <math.h>
+#include <cmath.h>
 
 /*********************************************************************
 int main(void)
