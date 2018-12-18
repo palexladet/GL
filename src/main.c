@@ -5,8 +5,7 @@
 /*********************************************************************
 int main(void)
 {
-	unsigned int a, b, c;
-	int R;
+	uint16_t R, a, b, c;
 	
 	printf("a: ");
 	scanf("%u",&a);
