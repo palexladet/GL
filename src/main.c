@@ -5,7 +5,7 @@
 /*********************************************************************
 int main(void)
 {
-	uint16_t R, a, b, c;
+	unsigned int R, a, b, c;
 	
 	printf("a: ");
 	scanf("%u",&a);
@@ -16,10 +16,10 @@ int main(void)
 	printf("c: "); 
 	scanf("%u",&c);
 	
-	if(a<=9&&b<=9&&c<=6)
+	if(a<=9&&b<=9&&c<=7)
 	{
-		R=(a*10+b)*(uint16_t)pow(10,c);
-		printf("la valeure de la resistance est egale a %d ohms",R);
+		R=(a*10+b)*(unsigned short int)pow(10,c);
+		printf("la valeure de la resistance est egale a %u ohms",R);
 	}
 	else
 	{
