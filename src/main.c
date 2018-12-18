@@ -18,7 +18,7 @@ int main(void)
 	
 	if(a<=9&&b<=9&&c<=6)
 	{
-		R=(a*10+b)*pow(10,c);
+		R=(a*10+b)*(uint16_t)pow(10,c);
 		printf("la valeure de la resistance est egale a %d ohms",R);
 	}
 	else
